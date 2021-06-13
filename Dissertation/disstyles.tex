@@ -1,7 +1,7 @@
 %% Переопределение именований, если иначе не сработает %%%
 \gappto\captionsrussian{
    \renewcommand{\chaptername}{}
-   \renewcommand{\appendixname}{Приложение} % (ГОСТ Р 7.0.11-2011, 5.7)
+   \renewcommand{\appendixname}{ПРИЛОЖЕНИЕ} % (ГОСТ Р 7.0.11-2011, 5.7)
 }
 
 %%% Изображения %%%
@@ -78,8 +78,8 @@
 % Порядковый номер страницы печатают на середине нижнего поля страницы (ТГУ ТАК ЗАХОТЕЛОСЬ)
 \makeevenhead{plain}{}{}{}
 \makeoddhead{plain}{}{}{}
-\makeevenfoot{plain}{}{\thepage}{}
-\makeoddfoot{plain}{}{\thepage}{}
+\makeevenfoot{plain}{}{\\* \thepage}{}
+\makeoddfoot{plain}{}{\\* \thepage}{}
 \pagestyle{plain}
 
 %%% добавить Стр. над номерами страниц в оглавлении
